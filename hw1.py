@@ -52,7 +52,7 @@ print str(f)
 
 print "Problem 3 solution follows:"
 
-z = ((a * b) - (-c) * -(d - e - f))
+z = (a*b) + ((-c) * -(d+e+f))
 
 print str(z)
 ###
