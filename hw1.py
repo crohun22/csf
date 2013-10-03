@@ -54,7 +54,14 @@ print "Problem 3 solution follows:"
 
 z = (a*b) + ((-c) * -(d+e+f))
 
-print str(z)
+if z == 1:
+    print 'True'
+
+else:
+    print 'False'
+
+##print str(z)
+
 ###
 ### Collaboration
 ###
