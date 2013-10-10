@@ -1,5 +1,5 @@
-# Name: ...
-# Evergreen Login: ...
+# Name: Hunter Crook
+# Evergreen Login: crohun22
 # Computer Science Foundations
 # Programming as a Way of Life
 # Homework 2
@@ -17,7 +17,13 @@
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 1 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+from hw2_test import n
+t = 0
+
+while (n > 0):
+    t = n + t
+    print str(t)
+    n = n-1
 
 
 ###
@@ -27,7 +33,12 @@ print "Problem 1 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 2 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+dec = [1/2.0, 1/3.0, 1/4.0, 1/5.0, 1/6.0, 1/7.0, 1/8.0, 1/9.0, 1/10.0]
+
+print str(dec) + "\n"
+
+#for 
+#print str(dec)
 
 
 ###
