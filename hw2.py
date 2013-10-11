@@ -33,12 +33,11 @@ while (n > 0):
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 2 solution follows:"
 
-dec = [1/2.0, 1/3.0, 1/4.0, 1/5.0, 1/6.0, 1/7.0, 1/8.0, 1/9.0, 1/10.0]
+d = 11  # d is the denominator
+for i in range (1, d):
+    i = 1.0/i
+    print i
 
-print str(dec) + "\n"
-
-#for 
-#print str(dec)
 
 
 ###
@@ -48,7 +47,15 @@ print str(dec) + "\n"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 3 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+n = 10
+tri = 0
+for i in range(0, n+1):
+    tri = i + tri
+    print tri
+    
+    
+print "Triangular number", n, "via loop:", tri
+print "Triangular number", n, "via formula:", n*(n+1)/2
 
 ###
 ### Problem 4
@@ -57,7 +64,11 @@ print "Problem 3 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 4 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+n = 5
+f = 1
+for i in range(1, n+1):
+    f = i * f
+    print "when i = " + str(i) + " f = " + str(f)
 
 ###
 ### Problem 5
@@ -66,8 +77,17 @@ print "Problem 4 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 5 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+numlines = 10
 
+
+for n in range(numlines, 0, - 1):
+    f = 1
+    for i in range(1, n+1):
+        f = i * f
+    
+    print str(f) + " is " + str(n) + "!"
+    
+        
 ###
 ### Problem 6
 ###
@@ -75,10 +95,22 @@ print "Problem 5 solution follows:"
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 6 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+numlines = 10
+sums = 0
+
+for n in range(1, numlines+1):
+    f = 1
+    
+    for i in range(1, n+1):
+        f = i * f
+ 
+    sums = (1.0/f) + sums  
+print sums + 1.0
 
 ###
-### Collaboration
+### Collaboration -
+###     In Part with what I used from the homework that was given and a very small
+###     amount of code given from Stubbycat85
 ###
 
 # ... List your collaborators and other sources of help here (websites, books, etc.),
@@ -91,3 +123,8 @@ print "Problem 6 solution follows:"
 # ... Write how long this assignment took you, including doing all the readings
 # ... and tutorials linked to from the homework page. Did the readings, tutorials,
 # ... and lecture contain everything you needed to complete this assignment?
+
+#   The overall time this project took was around approx. 3 hours from lab today
+#   and from home time including referencing the book. 
+#       The book had much more info that I believe we were told in class but was
+#       still easily accessible
