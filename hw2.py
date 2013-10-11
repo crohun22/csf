@@ -17,15 +17,16 @@
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 1 solution follows:"
 
-from hw2_test import n
-t = 0
+from hw2_test import n  #import the variable from the module
+t = 0 # t for total
 
 while (n > 0):
-    t = n + t
+    t = n + t    # While "n" is greater than 0, the total will be added to "n"
+                 # the porgram will print the current total and then subtract from "n"
     print str(t)
     n = n-1
 
-
+print "\n"      # I decided to put a break after each section for clarity
 ###
 ### Problem 2
 ###
@@ -33,13 +34,13 @@ while (n > 0):
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 2 solution follows:"
 
-d = 11  # d is the denominator
+d = 11                  # d is the denominator
 for i in range (1, d):
-    i = 1.0/i
-    print i
+    i = 1.0/i           # From 1 to decided number the loop will repeat while 
+    print i             # showing the decimal of 1 over said number in loop
 
 
-
+print "\n"
 ###
 ### Problem 3
 ###
@@ -49,14 +50,15 @@ print "Problem 3 solution follows:"
 
 n = 10
 tri = 0
-for i in range(0, n+1):
-    tri = i + tri
+for i in range(0, n+1):     # During loop repeat, the program will show a running
+    tri = i + tri           # total until the decided times is repeated
     print tri
     
     
 print "Triangular number", n, "via loop:", tri
 print "Triangular number", n, "via formula:", n*(n+1)/2
 
+print "\n"
 ###
 ### Problem 4
 ###
@@ -66,9 +68,10 @@ print "Problem 4 solution follows:"
 
 n = 5
 f = 1
-for i in range(1, n+1):
+for i in range(1, n+1):         
     f = i * f
     print "when i = " + str(i) + " f = " + str(f)
+print "\n"
 
 ###
 ### Problem 5
@@ -80,14 +83,14 @@ print "Problem 5 solution follows:"
 numlines = 10
 
 
-for n in range(numlines, 0, - 1):
+for n in range(numlines, 0, - 1):   #this is loop to count from decided number to 1
     f = 1
-    for i in range(1, n+1):
+    for i in range(1, n+1):         #this loop gets the factorial of said number
         f = i * f
     
     print str(f) + " is " + str(n) + "!"
     
-        
+print "\n"        
 ###
 ### Problem 6
 ###
@@ -107,6 +110,7 @@ for n in range(1, numlines+1):
     sums = (1.0/f) + sums  
 print sums + 1.0
 
+print "\n"
 ###
 ### Collaboration -
 ###     In Part with what I used from the homework that was given and a very small
