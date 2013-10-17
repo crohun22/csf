@@ -4,4 +4,5 @@ from lab2 import n
 while (n > 0):
     print "Hello world!"
     n = n-1
+Print "Yay! good job. From Sam"
     
