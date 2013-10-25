@@ -1,5 +1,5 @@
-# Name: ...
-# Evergreen Login: ...
+# Name: Hunter Crook
+# Evergreen Login: crohun22
 # Computer Science Foundations
 # Programming as a Way of Life
 # Homework 3: DNA analysis (Part 1)
@@ -22,6 +22,7 @@ import sys
 ###
 
 # You need to specify a file name
+
 if len(sys.argv) < 2:
     print "You must supply a file name as an argument when running this program."
     sys.exit(2)
@@ -51,8 +52,10 @@ for line in inputfile:
 
 # Total nucleotides seen so far.
 total_count = 0
+atTotal_count = 0
 # Number of G and C nucleotides seen so far.
 gc_count = 0
+at_count = 0
 
 
 # for each base pair in the string,
@@ -65,9 +68,22 @@ for bp in seq:
         # increment the count of gc
         gc_count = gc_count + 1
 
+# for each base pair in the string,
+for bp in seq:
+    # increment the total number of bps we've seen
+    atTotal_count = atTotal_count + 1
+
+    # next, if the bp is a G or a C,
+    if bp == 'A' or bp == 'T':
+        # increment the count of gc
+        at_count = at_count + 1
 
 # divide the gc_count by the total_count
 gc_content = float(gc_count) / total_count
 
+# divide the at_count by the atTotal_count
+at_content = float(at_count) / atTotal_count
+
 # Print the answer
 print 'GC-content:', gc_content
+print 'AT-content:', at_content

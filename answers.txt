@@ -1,5 +1,5 @@
-Name: ...
-Evergreen Login: ...
+Name: Hunter Crook
+Evergreen Login: crohun22
 Computer Science Foundations
 Programming as a Way of Life
 Fall 2013
@@ -19,20 +19,28 @@ Problem 1:
 
 Problem 2:
 
-...
+Sample 1 - GC-content: 0.43029262963
+Sample 2 - GC-content: 0.451051333333
+Sample 3 - GC-content: 0.646864112524
+Sample 4 - GC-content: 0.347852341166
+Sample 5 - GC-content: 0.263157894737
+Sample 6 - GC-content: 0.491518518519
 
 Problem 3:
 
-...
+When you comment out "seq" and "linenum" I get an error because it says that there is an error as the program tries to call something undefined
+
+And the same happens when you comment out "gc_count"
 
 Problem 4:
 
-...
+GC-content: 0.43029262963
+AT-content: 0.568993851852
 
 Collaboration:
 
-...
+I did this homework without anyone's help
 
 Reflection:
 
-...
+I learned that to call certain files not all in the same directory it becomes such an enjoyable maze lol

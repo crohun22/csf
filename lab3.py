@@ -1,9 +1,11 @@
-n = 33
+n = 10
 series = raw_input("Please enter the string - ")
 if series == "fibonacci":
-    a, b = 0,1
+    a = 0
+    b = 1
     for i in range(n-1):
-        a,b = b, a+b
+        a = b
+        b = a+b
         print a
 elif series == "sum":
     i = 0
