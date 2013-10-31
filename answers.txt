@@ -4,6 +4,7 @@ Computer Science Foundations
 Programming as a Way of Life
 Fall 2013
 Homework 3 
+Homework 4
 
 For each problem that requires a written answer, write (or copy-and-paste)
 your answers in this file.  When you are done, you should have replaced all
@@ -44,3 +45,17 @@ I did this homework without anyone's help
 Reflection:
 
 I learned that to call certain files not all in the same directory it becomes such an enjoyable maze lol
+
+Problem 5:
+
+GC-content: 0.43029262963
+AT-content: 0.568993851852
+A count: 0.285232851852
+T count: 0.283761
+G count: 0.212547148148
+C count: 0.217745481481
+
+Problem 6:
+
+	Sample 1
+		
