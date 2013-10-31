@@ -57,5 +57,91 @@ C count: 0.217745481481
 
 Problem 6:
 
+	test_small
+		A count: 10
+		T count: 10
+		G count: 10
+		C count: 10
+		The sum of the a,c, t, g is  10
+		The total length is  10
+
 	Sample 1
-		
+		A count: 27000000
+		T count: 27000000
+		G count: 27000000
+		C count: 27000000
+		The sum of the a,c, t, g is  27000000
+		The total length is  27000000
+	
+	Sample 2
+		A count: 27000000
+		T count: 27000000
+		G count: 27000000
+		C count: 27000000
+		The sum of the a,c, t, g is  27000000
+		The total length is  27000000
+
+	Sample 3
+		A count: 9510928
+		T count: 9510928
+		G count: 9510928
+		C count: 9510928
+		The sum of the a,c, t, g is  9510928
+		The total length is  9510928
+
+	Sample 4
+		A count: 9981008
+		T count: 9981008
+		G count: 9981008
+		C count: 9981008
+		The sum of the a,c, t, g is  9981008
+		The total length is  9981008
+
+	Sample 5
+		A count: 76
+		T count: 76
+		G count: 76
+		C count: 76
+		The sum of the a,c, t, g is  76
+		The total length is  76
+
+	Sample 6
+		A count: 27000
+		T count: 27000
+		G count: 27000
+		C count: 27000
+		The sum of the a,c, t, g is  27000
+		The total length is  27000
+
+	test_high-gc-1
+		A count: 40000
+		T count: 40000
+		G count: 40000
+		C count: 40000
+		The sum of the a,c, t, g is  40000
+		The total length is  40000
+
+	test-high-gc-2
+		A count: 40000
+		T count: 40000
+		G count: 40000
+		C count: 40000
+		The sum of the a,c, t, g is  40000
+		The total length is  40000
+
+	test-moderate-gc-1
+		A count: 40000
+		T count: 40000
+		G count: 40000
+		C count: 40000
+		The sum of the a,c, t, g is  40000
+		The total length is  40000
+
+	test-moderate-gc-2
+		A count: 40000
+		T count: 40000
+		G count: 40000
+		C count: 40000
+		The sum of the a,c, t, g is  40000
+		The total length is  40000
+

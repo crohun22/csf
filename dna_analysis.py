@@ -51,12 +51,8 @@ for line in inputfile:
 ###
 
 # Total nucleotides seen so far.
-gcTotal_count = 0
-atTotal_count = 0
-aTotal_count = 0
-tTotal_count = 0
-cTotal_count = 0
-gTotal_count = 0
+Total_count = 0
+
 
 # Number of nucleotides seen so far.
 gc_count = 0
@@ -70,69 +66,62 @@ g_count = 0
 # for each base pair in the string,
 for bp in seq:
     # increment the total number of bps we've seen
-    gcTotal_count = gcTotal_count + 1
+    Total_count = Total_count + 1
 
     # next, if the bp is a G or a C,
     if bp == 'C' or bp == 'G':
         # increment the count of gc
         gc_count = gc_count + 1
-
-# for each base pair in the string,
-for bp in seq:
-    # increment the total number of bps we've seen
-    atTotal_count = atTotal_count + 1
-
-    # next, if the bp is a G or a C,
+    
+    # next, if the bp is a A or a T,
     if bp == 'A' or bp == 'T':
-        # increment the count of gc
+        # increment the count of at
         at_count = at_count + 1
-
-# for each each seperate nucleotide in the string,
-for bp in seq:
-    # increment the total number of bps we've seen
-    aTotal_count = aTotal_count + 1
-    tTotal_count = tTotal_count + 1
-    cTotal_count = cTotal_count + 1
-    gTotal_count = gTotal_count + 1
-
-    # next, if the bp is a G or a C,
+    
+    # next, if the bp is an a A nucleotide,
     if bp == 'A':
-        # increment the count of gc
+        # increment the count of a
         a_count = a_count + 1
+    # next, if the bp is an a T nucleotide,
     elif bp == 'T':
-        # increment the count of gc
+        # increment the count of T
         t_count = t_count + 1
+    # next, if the bp is an a C nucleotide,
     elif bp == 'C':
-        # increment the count of gc
+        # increment the count of C
         c_count = c_count + 1
+    # next, if the bp is an a G nucleotide,
     elif bp == 'G':
-        # increment the count of gc
+        # increment the count of G
         g_count = g_count + 1
 
 
 # divide the gc_count by the total_count
-gc_content = float(gc_count) / gcTotal_count
+gc_content = float(gc_count) / Total_count
 
 # divide the at_count by the atTotal_count
-at_content = float(at_count) / atTotal_count
+at_content = float(at_count) / Total_count
 
 # divide the a_count by the aTotal_count
-a_content = float(a_count) / aTotal_count
+a_content = float(a_count) / Total_count
 
 # divide the t_count by the tTotal_count
-t_content = float(t_count) / tTotal_count
+t_content = float(t_count) / Total_count
 
 # divide the c_count by the cTotal_count
-c_content = float(c_count) / cTotal_count
+c_content = float(c_count) / Total_count
 
 # divide the g_count by the gTotal_count
-g_content = float(g_count) / gTotal_count
+g_content = float(g_count) / Total_count
 
 
 # Print the answer
-print 'GC-content:', gc_content
-print 'AT-content:', at_content
-print 'A count:', a_content
-print 'T count:', t_content
-print 'G count:', g_content
-print 'C count:', c_content
+#print 'GC-content:', gc_content
+#print 'AT-content:', at_content
+
+print 'A count:', Total_count
+print 'T count:', Total_count
+print 'G count:', Total_count
+print 'C count:', Total_count
+print 'The sum of the a,c, t, g is ', Total_count
+print 'The total length is ', len(seq)
