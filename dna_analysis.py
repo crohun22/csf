@@ -116,12 +116,13 @@ g_content = float(g_count) / Total_count
 
 
 # Print the answer
-#print 'GC-content:', gc_content
-#print 'AT-content:', at_content
+print 'GC-content:', gc_content
+print 'AT-content:', at_content
+print 'The AT/GC ration is ' + (at_count / gc_count)
 
-print 'A count:', Total_count
-print 'T count:', Total_count
-print 'G count:', Total_count
-print 'C count:', Total_count
+print 'A count:', a_count
+print 'T count:', t_count
+print 'G count:', g_count
+print 'C count:', c_count
 print 'The sum of the a,c, t, g is ', Total_count
 print 'The total length is ', len(seq)

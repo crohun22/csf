@@ -145,3 +145,7 @@ Problem 6:
 		The sum of the a,c, t, g is  40000
 		The total length is  40000
 
+
+Problem 7
+
+
