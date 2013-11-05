@@ -58,94 +58,130 @@ C count: 0.217745481481
 Problem 6:
 
 	test_small
-		A count: 10
-		T count: 10
-		G count: 10
-		C count: 10
-		The sum of the a,c, t, g is  10
-		The total length is  10
+		A count: 5
+		T count: 2
+		G count: 1
+		C count: 2
+		The sum of the a,c, t, g is:  10
+		The total length is:  10
 
 	Sample 1
-		A count: 27000000
-		T count: 27000000
-		G count: 27000000
-		C count: 27000000
-		The sum of the a,c, t, g is  27000000
-		The total length is  27000000
+		A count: 7701287
+		T count: 7661547
+		G count: 5738773
+		C count: 5879128
+		The sum of the a,c, t, g is:  27000000
+		The total length is:  27000000
 	
 	Sample 2
-		A count: 27000000
-		T count: 27000000
-		G count: 27000000
-		C count: 27000000
-		The sum of the a,c, t, g is  27000000
-		The total length is  27000000
+		A count: 7467696
+		T count: 7331353
+		G count: 6103168
+		C count: 6075218
+		The sum of the a,c, t, g is:  27000000
+		The total length is:  27000000
 
 	Sample 3
-		A count: 9510928
-		T count: 9510928
-		G count: 9510928
-		C count: 9510928
-		The sum of the a,c, t, g is  9510928
-		The total length is  9510928
+		A count: 1561973
+		T count: 1796632
+		G count: 3008039
+		C count: 3144239
+		The sum of the a,c, t, g is:  9510928
+		The total length is:  9510928
 
 	Sample 4
-		A count: 9981008
-		T count: 9981008
-		G count: 9981008
-		C count: 9981008
-		The sum of the a,c, t, g is  9981008
-		The total length is  9981008
+		A count: 3304273
+		T count: 3204771
+		G count: 1620779
+		C count: 1851138
+		The sum of the a,c, t, g is:  9981008
+		The total length is:  9981008
 
 	Sample 5
-		A count: 76
-		T count: 76
-		G count: 76
-		C count: 76
-		The sum of the a,c, t, g is  76
-		The total length is  76
+		A count: 27
+		T count: 28
+		G count: 11
+		C count: 9
+		The sum of the a,c, t, g is:  76
+		The total length is:  76
 
 	Sample 6
-		A count: 27000
-		T count: 27000
-		G count: 27000
-		C count: 27000
-		The sum of the a,c, t, g is  27000
-		The total length is  27000
+		A count: 6867
+		T count: 6852
+		G count: 7304
+		C count: 5967
+		The sum of the a,c, t, g is:  27000
+		The total length is:  27000
 
 	test_high-gc-1
-		A count: 40000
-		T count: 40000
-		G count: 40000
-		C count: 40000
-		The sum of the a,c, t, g is  40000
-		The total length is  40000
+		A count: 7970
+		T count: 7894
+		G count: 12176
+		C count: 11800
+		The sum of the a,c, t, g is:  40000
+		The total length is:  40000
 
 	test-high-gc-2
-		A count: 40000
-		T count: 40000
-		G count: 40000
-		C count: 40000
-		The sum of the a,c, t, g is  40000
-		The total length is  40000
+		A count: 3908
+		T count: 4023
+		G count: 15955
+		C count: 15955
+		The sum of the a,c, t, g is:  40000
+		The total length is:  40000
 
 	test-moderate-gc-1
-		A count: 40000
-		T count: 40000
-		G count: 40000
-		C count: 40000
-		The sum of the a,c, t, g is  40000
-		The total length is  40000
+		A count: 10077
+		T count: 9963
+		G count: 9818
+		C count: 9983
+		The sum of the a,c, t, g is:  40000
+		The total length is:  40000
 
 	test-moderate-gc-2
-		A count: 40000
-		T count: 40000
-		G count: 40000
-		C count: 40000
-		The sum of the a,c, t, g is  40000
-		The total length is  40000
+		A count: 11813
+		T count: 12027
+		G count: 7972
+		C count: 7999
+		The sum of the a,c, t, g is:  40000
+		The total length is:  40000
 
 
 Problem 7
 
+	test_small
+		The AT/GC ratio is: 2
+		A count: 5
+		T count: 2
+		G count: 1
+		C count: 2
+		The sum of the a,c, t, g is:  10
+		The total length is:  10
+	
+	Sample 1
+		The AT/GC ratio is: 1
+		A count: 7701287
+		T count: 7661547
+		G count: 5738773
+		C count: 5879128
+		The sum of the a,c, t, g is:  27000000
+		The total length is:  27000000
+	
+Problem 8
+	Sample 1
+		This organism is a moderate GC content
+		The AT/GC ratio is: 1
+		A count: 7701287
+		T count: 7661547
+		G count: 5738773
+		C count: 5879128
+		The sum of the a,c, t, g is: 27000000
+		The total length is:  27000000
 
+Collaboration:
+	I had no one help me with this project at all
+	
+Reflection:
+	This project caused many trials but the hardest for me was
+	navigating through the computers to find the files I needed to run
+	the program and date and learning how to use Windows line command.
+	

@@ -61,6 +61,7 @@ a_count = 0
 t_count = 0
 c_count = 0
 g_count = 0
+ratio = 0.0
 
 
 # for each base pair in the string,
@@ -114,15 +115,26 @@ c_content = float(c_count) / Total_count
 # divide the g_count by the gTotal_count
 g_content = float(g_count) / Total_count
 
+# Divide the AT count by the GC count to get the ratio
+ratio = at_count/gc_count
+
 
 # Print the answer
 print 'GC-content:', gc_content
+if (gc_content >= 0.6):
+    print 'This organism is a high GC content.'
+elif gc_content <= 0.4:
+    print 'This organism is a low GC content.'
+else:
+    print 'This organism is a moderate GC content.'
 print 'AT-content:', at_content
-print 'The AT/GC ration is ' + (at_count / gc_count)
+print 'The AT/GC ratio is: ', ratio
 
 print 'A count:', a_count
 print 'T count:', t_count
 print 'G count:', g_count
 print 'C count:', c_count
-print 'The sum of the a,c, t, g is ', Total_count
-print 'The total length is ', len(seq)
+print 'The sum of the a,c, t, g is: ', Total_count
+print 'The total length is: ', len(seq)
+
+#no collaboration
