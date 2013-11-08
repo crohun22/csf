@@ -215,7 +215,7 @@ if __name__ == "__main__":
 
     test_read_csv()
     test_row_to_edge()
-    #test_state_edges()
+    test_state_edges()
     test_earlier_date()
     #test_most_recent_poll_row()
     #test_unique_column_values()
