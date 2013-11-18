@@ -1,0 +1,354 @@
+Programming as a Way of Life
+Homework 6 Submission
+
+
+Group 18
+Branddon Gordon
+Hunter Crook
+Justin Carson
+
+
+
+
+Problem 3
+
+
+Data Structures
+
+
+A data structure is a particular way of storing data. Some examples of data structures are dictionaries, lists and tuples. Each of these data
+structures contain specific methods and rules for storing data. Data structures can contain other data structures, for example a dictionary of 
+sets or a list of dictionaries of tuples.
+
+
+Lists -
+A list is a data structure that is mutable and is a sequence of values that can be integers or letters/strings, where sequence matters due to
+indexing and repeat values are treated as separate data points. The operator for the type 'list' is square brackets with values separated by a
+comma [a, b, c] [1, 2, 3]. Each value in a list is assigned a specific address, called an INDEX, which starts at 0 for the first value and 
+counts up consecutively at each data point until there is no more data in the list.
+For example, in the two lists above, both have values at index[0], index[1] and index[2]. You can also nest a list within a list, for example 
+EXAMPLELIST[1, 2, 3, 4, 5, [a, b, c], [a, c, d], [a, d, e], [a, e, f], [a, f, g]].
+Dictionaries -
+A dictionary is a data structure that is mutable and maps a key to a value, also known as key-value pairs or hash tables. A dictionary is like
+a more generalized list where you define the index and assign that index to a value. In general, the order of items in dictionaries are unpredictable,
+but this is irrelevant because we are not using integer indices, we are creating our own key indices which don't change with position.
+The operator for the type 'dictionary' is curly brackets with keys and values separated by a colon, and key-value pairs are separated by commas {'a':1, 'b': 2}.
+In this example, key a is assigned the value of 1, key b is assigned the value of 2, etc. The key doesn't have to be a single letter or number, 
+it can be a string, and the value can be a string as well; for example {"breakfast": "Two eggs, two bacon and two toast!", "lunch": "A sandwich, 
+an apple and some broccoli!", "dinner": "A whole bag of sunchips!"}. Dictionaries can be nested within themselves and other data structures as well.
+
+
+Tuples -
+A tuple is a data structure that is immutable and maps a value of any type and is indexed by integers so position matters. This makes them 
+similar to lists, except that the values mapped within a tuple are not modifiable or reassignable. Tuples are similar to dictionaries in 
+that they are structurally similar to key-value pairs. The operator for type 'tuple' is parenthesis with values separated by commas (1, 2, 3).
+
+
+Programming Practice!
+Create a list, a tuple and a dictionary that have 3 values each.
+Create a list of data structures where each value in the list is one of the 3 value data structures you just created.
+
+
+Problem 4
+
+
+Function Definition
+
+
+A function is a named sequence of statements that performs an operation. A function is like a variable that you assign a task to, instead of a value.
+The operator for defining a function is def(): where def is the keyword for function definition, the parentheses denote an argument for the function and 
+the colon starts an indent to add statements to define the function. The first line of a function is referred to as the header, the rest is called the body. 
+Closed parentheses indicate that the function doesn't take any arguments. Values within the parenthesis indicate that the function takes arguments assigned
+to variables, which are called parameters.
+For example;
+
+
+def print_lyrics(): #this is a user defined function with no
+print "I'm a lumberjack, and I'm okay." #arguments named print_lyrics. When it is
+print "I sleep all night and I work all day." #called, it will return these two statements.
+
+
+def repeat_lyrics(): #this is a user defined function that when called, calls function
+print_lyrics() #print_lyrics, which is repeated. When repeat_lyrics is called, it
+print_lyrics() #will output the value of function print_lyrics, twice
+
+
+def print_twice(bruce): #this is a user defined function named print_twice
+print bruce #when the function named print_twice is called, these statements
+print bruce #execute and bruce will be printed twice
+
+
+In this way you can create a function that calls other functions, or a function that modifies an input parameter. Think of the parameters of a 
+function as being the data/value (or variable assigned to data/value) that you want the function to manipulate.
+
+
+Programming Practice!
+Create a function that when called prints your name and evergreen login.
+Create a function that when called uses the output from your previous function and adds the text "Here is my name and evergreen login" to it.
+
+
+
+
+
+
+Problem 5
+
+
+Using assert… Effectively.
+
+
+An assert statement is used to test if a statement is true or false. If the statement proves false the code will fail. If it proves true it will pass silently.
+
+
+For example: 
+
+
+assert 4==2+2 #If the statement is true, the assert will pass.
+
+
+assert 4==500=+500 #This statement will fail. The assert will return an error  as such:
+
+
+#Traceback (most recent call last):                                                                                                          
+# File "<stdin>", line X, in <module>                                                                                                       
+#AssertionError                                                                                                                              
+#>>>       
+
+
+#The difference will be that the line X will be the line that the assert statement fails at.
+
+
+To sum this example up, the assert statement is used to check an assumption that is in your code. Whenever you assume something, 
+if you use assert you will make an easy fix if you assumed wrong, and will protect your code.
+
+
+Here is another example of using assert within a function.
+
+
+
+
+
+
+
+
+def KelvinToFahrenheit(Temperature):
+  assert (Temperature >= 0),"Colder than absolute zero!"
+  return ((Temperature-273)*1.8)+32
+
+print KelvinToFahrenheit(273)
+print int(KelvinToFahrenheit(505.78))
+print KelvinToFahrenheit(-5)
+
+
+This function will return: 
+32.0
+451
+Traceback (most recent call last):
+ File "test.py", line 9, in <module>
+   print KelvinToFahrenheit(-5)
+ File "test.py", line 4, in KelvinToFahrenheit
+   assert (Temperature >= 0),"Colder than absolute zero!"
+AssertionError: Colder than absolute zero!
+
+
+
+
+Programming Practice! 
+
+
+Write an assert statement that is true and will pass.
+Write an assert statement that is false and will fail.
+On the failed assert statement give the statement an assertion error.
+Put an assert statement into the function that you made in problem 4 by setting your login name equal to your login name but replace the
+last letter of your name with an X on the equals to side, then write an assertion error that says ‘Check spelling’
+
+
+
+
+
+
+
+
+
+
+
+
+Problem 6
+
+
+If, Else, Elif 
+
+
+The If Statement
+The if statement allows you to check a single expression for the truth value and then execute a block of code if it proves true.
+
+
+For example :
+
+
+x=100
+if ( x==100 ) print “Value of X is equal to one hundred.”
+
+
+The syntax of the ‘if’ statement is:
+
+
+if condition :
+indentedStatementBlock
+
+
+
+
+
+
+
+
+The else Statement
+The else statement is used following the if statement and will be active when the if statement is false.
+
+
+For Example:  
+
+
+temperature = float(input('What is the temperature? '))
+   if temperature > 70:
+       print('Wear shorts.')
+   else:
+       print('Wear long pants.'
+print “Have a nice day!”
+
+
+If the temperature is greater than 70 the statement will print:
+
+
+Wear shorts.
+Have a nice day!
+
+
+If the temperature is less than 70 the statement will print:
+
+
+Wear long pants.
+Have a nice day!
+
+
+The general syntax of an if\else statement is:
+
+
+if condition :
+indentedStatementBlockForTrueCondition
+else:
+indentedStatementBlockForFalseCondition
+
+
+
+
+
+
+
+
+
+
+
+
+The elif Statement
+The elif statement allows you to check multiple expressions for truth value and execute a block of code as soon as one of the 
+conditions evaluates to true. Like the else, the elif statement is optional. However, unlike else, for which there can be at 
+most one statement, there can be an arbitrary number of elif statements following an if.
+The syntax of the if...elif statement is:
+if expression1:
+  statement(s)
+elif expression2:
+  statement(s)
+elif expression3:
+  statement(s)
+else:
+  statement(s)
+
+
+
+
+
+
+
+
+
+
+
+
+For Example:  
+
+
+WeatherTodayIs = Sunny
+
+
+if WeatherTodayIs == Cloudy
+        print ‘The weather is cloudy, bring a coat.’
+print WeatherTodayIs
+elif WeatherTodayIs == Rainy
+        print ‘The weather is rainy, stay inside.’
+        print WeatherTodayIs
+elif WeatherTodayIs == Sunny
+        print ‘The weather is sunny, get outside!’
+        print ‘WeatherTodayIs’
+print ‘Enjoy the weather!’
+
+
+This statement will return: 
+
+
+The weather is sunny, get outside!
+Sunny
+Enjoy the weather!
+
+
+Practice Programming!
+
+Write an if statement that print  “X==100000”
+Write an If Else statement that will print “Y==500”, but do this with two different values, one 400, one 500.
+Write an elif statement that will list today is Monday, Tuesday, and Wednesday. Then will print the true statement of “Today is Tuesday.” 
+
+
+
+
+Problem 7
+
+
+Return and Pass
+
+
+Return statement: A return statement will have a function print a value, and hand that value back to the programmer to use again. 
+Unlike with the print statement where that value is just printed and no longer used.
+
+
+Here is an example of a return statement:
+
+
+def foo():
+        print "hello from within foo"
+        return 2
+foo()
+        hello from within foo
+        2
+def bar():
+        return 10 * foo()
+bar()
+        hello from within foo
+        20
+
+
+You can see that when foo is called from bar, 2 isn't written to the console, but it is used to calculate the value returned from bar.
+The pass statement:
+The pass statement is a null operation. When it is used it literally does nothing. Now why would we need a statement that literally does nothing? 
+Well it becomes a placeholder for when such things as a function are needed, but no code needs to executed. 
+For example: 
+def f(arg): pass    # a function that does nothing (yet)
+
+class C: pass       # a class with no methods (yet)
+Here the pass statement will allow us to run the code, but skip these function in the process to later put a value in.
+
+
+Practice Programming!
+Write a function and use the return value. Then write a second function that you will use in the next question, but set it to pass.
+Okay step two, take the code from above, rewrite it on the next line and erase the pass statement. Then use the value of the top 
+function with its return in the return value of the second function as I did in the example above.
