@@ -1,0 +1,6 @@
+The original Idea for our project is to have python draw some predertimined notes on a pre-drawn scale
+and then after having drawn the notes will go back through and play said notes (for length and possibly pitch)
+This ideally will lead to user interface with note placement, length and tone.
+
+I am planning to complete this project with Zach Adam (adazac10)
+
