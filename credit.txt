@@ -1,0 +1,10 @@
+Do the following to receive credit
+
+* Commit your project code, even if it doesn't work, to github tonight.
+* Show up for tutoring tomorrow in LIB 2612 at 2pm.
+* Finish election.py problem 1.
+* Write and submit self-evals and faculty evals for me, Neal, and Sherri online at my.evergreen.edu
+
+Do this by 5pm tomorrow.
+
+Thanks, Paul
