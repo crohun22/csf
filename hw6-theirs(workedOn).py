@@ -1,0 +1,216 @@
+# -*- coding: utf-8 -*-
+Programming as a Way of Life
+Homework 6 Problems
+
+Group 05
+Group Member 1 Katrina Sayre
+Group Member 2 Alexei McConville
+
+    Group 18
+    GM1- Hunter Crook
+    GM2- Branddon Gordon
+    GM3- Jason Carson
+
+###################################################################################
+Problem 3: Nested Data Structures
+
+Sets, tuples, and dictionaries are all types of data structures. They can be used individually or can be
+"nested" inside of eachother. For example, you can have a dictionary containing a list.
+
+"A tuple is a sequence of values. The values can be any type, and they are indexed by
+integers, so in that respect tuples are a lot like lists. The important difference is that tuples
+are immutable.
+A dictionary is like a list, but more general. In a list, the indices have to be integers; in a
+dictionary they can be (almost) any type.
+You can think of a dictionary as a mapping between a set of indices (which are called keys)
+and a set of values. Each key maps to a value. The association of a key and a value is called
+a key-value pair or sometimes an item."*
+A set can store certain values without any particular order and no repeated values.
+
+Data structure indicators:
+set = set[1,2,3]
+tuple = ( )
+dictionary = { }
+
+Dictionary example:
+d = { "Mom" : "360-555-1111", "Dad" : "360-111-5555" }
+
+d ["Mom"]
+#output
+"360-555-1111"
+
+#can reassign
+d["Mom"] = "360-999-3333"
+
+d ["Mom"]
+#output
+"360-999-3333"
+
+~Practice making individual data structures:
+  Make a tuple.
+  Make a set.
+  Make a dictionary.
+  
+"""
+Practice 1 - 
+    tupe = (1, 4, 6, 9)
+Practice 2 -
+    numberSet = [2, 6, 7, 8]
+Practice 3 -
+    dic = {"Jason": "6969", "Branddon": "10101"}
+
+
+"""
+  
+Now, practice making nested data structures:
+  Make a set containing a dictionary.
+  Make a set containing a tuple.
+  Make a set containing a dictionary that contains a set.
+  
+"""
+Practice 4-
+    dicSet = [{"Zach": "PiggyLover"}, {"Hunter": "DragonLover"}]
+Practice 5-
+    tupSet = [(1, 2, 3), (2, 4, 6)]
+Practice 6-
+    setDicSet = [{"set1": [1, 2, 3]}, {"set2": [2, 3, 4]}]
+
+"""
+  
+Note: When using an interpreter, you can determine what type something is by calling on the keyword 'type'. The return
+value is the type of object.
+
+###################################################################################
+Problem 4: 'for' and 'if' statements
+
+"The syntax of a 'for' statement is similar to a function deﬁnition. It has a header that ends
+with a colon and an indented body. The body can contain any number of statements.
+A for statement is sometimes called a loop because the ﬂow of execution runs through the
+body and then loops back to the top."*
+
+Example of a 'for' statement:
+
+n = 25
+x = 0
+for i in range(n):
+  x = x + i
+  print x
+  
+~Practice making a 'for' loop:
+Assign a variable to some number. Use a 'for' statement to indicate the range of that variable. Have another variable,
+which you identify before the 'for' statement. Increase your second variable by the range of your first (add x+1,
+x+2,... x+n).
+
+"""
+Practice-
+    x = 4
+    z = 2
+    for i in range(x):
+        z += 1
+        print z
+        
+
+"""
+###################################################################################
+Problem 5: Definitions
+
+"A function deﬁnition speciﬁes the name of a new function and the
+sequence of statements that execute when the function is called.
+
+Here is an example:
+def print_lyrics():
+  print "I'm a lumberjack, and I'm okay."
+  print "I sleep all night and I work all day."
+  
+def is a keyword that indicates that this is a function deﬁnition. The name of the function
+is print_lyrics. The rules for function names are the same as for variable names: letters,
+numbers and some punctuation marks are legal, but the ﬁrst character can’t be a number.
+You can’t use a keyword as the name of a function, and you should avoid having a variable
+and a function with the same name.
+The empty parentheses after the name indicate that this function doesn’t take any arguments.
+The ﬁrst line of the function deﬁnition is called the header; the rest is called the body.
+The header has to end with a colon and the body has to be indented. By convention, the
+indentation is always four spaces (see Section 3.14). The body can contain any number of
+statements."*
+
+~Practice:
+Define a function that, when called, prints your full name, first, middle, and last - each on separate lines.
+
+"""
+Practice-
+    def namePrinter():
+        print "Hunter"
+        print "Allen"
+        print "Crook"
+
+    namePrinter()
+"""
+###################################################################################
+Problem 6: 'assert'
+
+An 'assert' call means everything that follows is Boolean (True or False). 'Assert' helps to fix bugs in your program by
+confirming that all that should be true is and, if not, gives you an 'assertion error'.
+After you define a function, you can use the 'assert' to confirm that the function is working correctly.
+
+~Practice:
+Define a function (call it 'square') that finds the square of a number, x.
+Define a test function (call it 'test_square') that confirms (via 'assert') that your previous 'square'
+function works properly (give x any value and call your 'square' function - use a whole number).
+
+"""
+Practice-
+    def square(x):
+        x = x ** 2
+        return x
+        
+    def test_square(square):
+        assert square
+    
+    test_square(square(x))
+
+"""
+###################################################################################
+Problem 7: 'return' and 'pass'
+
+The 'pass' keyword does nothing - it is handy when you have a function that is not implemented yet, but the body of
+the function cannot be empty - so, until you implement the function 'pass' will stop the interpreter from barking at you.
+example:
+
+def function():
+  pass
+  
+  
+The 'return' keyword works with function defintions; it exits the function and returns a value.
+example:
+
+def cube(x):
+  return x * x * x
+  
+a = cube(7)
+b = cube(26)
+
+# the function will calculate the cube of a number, the 'return' key will exit the function and return
+# a value, that value is then assigned to the a, b variables.
+
+~Practice:
+Define a function and pass it. Define another function and return a value. Feel free to use previously defined
+functions.
+
+"""
+Practice-
+    "from previous answer"
+    def square(x):
+        x = x ** 2  ### return ###
+        return x
+        
+    def square(x):
+        pass         #### pass ###
+                            
+"""
+
+
+**** All quoted information is from our textbook, Think Python.
+
+
+###################################################################################
+
