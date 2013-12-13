@@ -35,8 +35,23 @@ def state_edges(election_result_rows):
     The input list has no duplicate states;
     that is, each state is represented at most once in the input list.
     """
-    return election_result_rows
+    state_advantages = {} #sets a variable and defines it as a dictionary
+                            
+                
+    for rows1 in election_result_rows: #runs only amount of times of rows
+                                  
+                                    
 
+        edge = row_to_edge(row) #sets a varialbe to the math function
+                    
+
+        State = (rows1['State']) #picks the row
+        
+
+        state_advantages[State] = edge #puts the row together with the math
+        
+
+    return state_advantages # returns the answer
 
 ################################################################################
 # Problem 2: Find the most recent poll row
