@@ -4,6 +4,7 @@ Do the following to receive credit
 * Show up for tutoring tomorrow in LIB 2612 at 2pm.
 * Finish election.py problem 1.
 * Write and submit self-evals and faculty evals for me, Neal, and Sherri online at my.evergreen.edu
+* Solve the hw6 problems from Alexei and Katie and commit them as hw6.py into your github repo.
 
 Do this by 5pm tomorrow.
 
