@@ -10,6 +10,8 @@ Group Member 2 Alexei McConville
     GM1- Hunter Crook
     GM2- Branddon Gordon
     GM3- Jason Carson
+    """All of their answers are located within a series of quotes and clearly labeled
+    """
 
 ###################################################################################
 Problem 3: Nested Data Structures
@@ -51,7 +53,7 @@ d ["Mom"]
   Make a set.
   Make a dictionary.
   
-"""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Practice 1 - 
     tupe = (1, 4, 6, 9)
 Practice 2 -
@@ -60,14 +62,14 @@ Practice 3 -
     dic = {"Jason": "6969", "Branddon": "10101"}
 
 
-"""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
   
 Now, practice making nested data structures:
   Make a set containing a dictionary.
   Make a set containing a tuple.
   Make a set containing a dictionary that contains a set.
   
-"""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Practice 4-
     dicSet = [{"Zach": "PiggyLover"}, {"Hunter": "DragonLover"}]
 Practice 5-
@@ -75,7 +77,7 @@ Practice 5-
 Practice 6-
     setDicSet = [{"set1": [1, 2, 3]}, {"set2": [2, 3, 4]}]
 
-"""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
   
 Note: When using an interpreter, you can determine what type something is by calling on the keyword 'type'. The return
 value is the type of object.
@@ -101,7 +103,7 @@ Assign a variable to some number. Use a 'for' statement to indicate the range of
 which you identify before the 'for' statement. Increase your second variable by the range of your first (add x+1,
 x+2,... x+n).
 
-"""
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 Practice-
     x = 4
     z = 2
@@ -110,7 +112,8 @@ Practice-
         print z
         
 
-"""
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+
 ###################################################################################
 Problem 5: Definitions
 
@@ -136,7 +139,7 @@ statements."*
 ~Practice:
 Define a function that, when called, prints your full name, first, middle, and last - each on separate lines.
 
-"""
+""""""""""""""""""""""""""""""""""""""""""""""""
 Practice-
     def namePrinter():
         print "Hunter"
@@ -144,7 +147,9 @@ Practice-
         print "Crook"
 
     namePrinter()
-"""
+""""""""""""""""""""""""""""""""""""""""""""""""
+
+
 ###################################################################################
 Problem 6: 'assert'
 
@@ -157,7 +162,7 @@ Define a function (call it 'square') that finds the square of a number, x.
 Define a test function (call it 'test_square') that confirms (via 'assert') that your previous 'square'
 function works properly (give x any value and call your 'square' function - use a whole number).
 
-"""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Practice-
     def square(x):
         x = x ** 2
@@ -168,7 +173,8 @@ Practice-
     
     test_square(square(x))
 
-"""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 ###################################################################################
 Problem 7: 'return' and 'pass'
 
@@ -196,7 +202,7 @@ b = cube(26)
 Define a function and pass it. Define another function and return a value. Feel free to use previously defined
 functions.
 
-"""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Practice-
     "from previous answer"
     def square(x):
@@ -206,7 +212,7 @@ Practice-
     def square(x):
         pass         #### pass ###
                             
-"""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 **** All quoted information is from our textbook, Think Python.
